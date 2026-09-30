@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title("People intrested in sports")
-file = st.flie_uploader("upload your csv file", type=["csv"])
+file = st.file_uploader("upload your csv file", type=["csv"])
 
 if file:
    df= pd.read_csv(file)
